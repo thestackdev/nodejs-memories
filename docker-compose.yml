@@ -1,0 +1,9 @@
+services:
+  memories:
+    image: memories
+    build: .
+    restart: unless-stopped
+    ports:
+      - "5007:5007"
+    expose:
+      - "5007"
